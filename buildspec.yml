@@ -10,12 +10,12 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build -t appserver .
-      - docker tag appserver 981942040659.dkr.ecr.us-east-1.amazonaws.com/app-server
+      - docker tag appserver 981942040659.dkr.ecr.us-east-1.amazonaws.com/tomcat
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push 981942040659.dkr.ecr.us-east-1.amazonaws.com/app-server
+      - docker push 981942040659.dkr.ecr.us-east-1.amazonaws.com/tomcat
       - echo build has beed completed!
 
 
