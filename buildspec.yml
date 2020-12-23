@@ -16,6 +16,6 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push 981942040659.dkr.ecr.us-east-1.amazonaws.com/tomcat
-      - echo build has beed completed!
+      
 
 
